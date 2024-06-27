@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: #f4f2fc;
+    background-color: #ffffff;
     font-family: Rajdhani,sans-serif!important;
 }
 
@@ -216,10 +216,159 @@ header{
             transition: 1s ease;
             }
 
+            .grow img{
+                filter: grayscale(100%);
+                -webkit-filter: grayscale(100%);
+                -webkit-transition: all 1s ease;
+                }
+                
+                .grow img:hover{
+                filter: grayscale(0%);
+                filter: gray;
+                -webkit-filter: grayscale(0%);
+                filter: none;
+                transition: 1s ease;
+                }
+
+
+
+                .slide2 img{
+                  filter: grayscale(100%);
+                  -webkit-filter: grayscale(100%);
+                  -webkit-transition: all 1s ease;
+                  }
+                  
+                  .slide2 img:hover{
+                  filter: grayscale(0%);
+                  filter: gray;
+                  -webkit-filter: grayscale(0%);
+                  filter: none;
+                  transition: 1s ease;
+                  }
+
+
+
+                  .mainheadding h1{
+                    filter: grayscale(100%);
+                    -webkit-filter: grayscale(100%);
+                    -webkit-transition: all 1s ease;
+                    }
+                    
+                    .mainheadding h1:hover{
+                    filter: grayscale(0%);
+                    filter: gray;
+                    -webkit-filter: grayscale(0%);
+                    filter: none;
+                    transition: 1s ease;
+                    }
 
 
 
 
+                    .menu {
+                      filter: grayscale(100%);
+                      -webkit-filter: grayscale(100%);
+                      -webkit-transition: all 1s ease;
+                      }
+                      
+                      .menu:hover{
+                      filter: grayscale(0%);
+                      filter: gray;
+                      -webkit-filter: grayscale(0%);
+                      filter: none;
+                      transition: 1s ease;
+                      }
+
+
+
+                      .button-36 {
+                        filter: grayscale(100%);
+                        -webkit-filter: grayscale(100%);
+                        -webkit-transition: all 1s ease;
+                        }
+                        
+                        .button-36:hover{
+                        filter: grayscale(0%);
+                        filter: gray;
+                        -webkit-filter: grayscale(0%);
+                        filter: none;
+                        transition: 1s ease;
+                        }
+
+                
+
+
+
+                        .subhead h1{
+                          filter: grayscale(100%);
+                          -webkit-filter: grayscale(100%);
+                          -webkit-transition: all 1s ease;
+                          }
+                          
+                          .subhead h1:hover{
+                          filter: grayscale(0%);
+                          filter: gray;
+                          -webkit-filter: grayscale(0%);
+                          filter: none;
+                          transition: 1s ease;
+                          }
+
+
+
+
+                          .lasthead h1{
+                            filter: grayscale(100%);
+                            -webkit-filter: grayscale(100%);
+                            -webkit-transition: all 1s ease;
+                            }
+                            
+                            .lasthead h1:hover{
+                            filter: grayscale(0%);
+                            filter: gray;
+                            -webkit-filter: grayscale(0%);
+                            filter: none;
+                            transition: 1s ease;
+                            }
+
+
+
+                            .lorem h1{
+                              filter: grayscale(100%);
+                              -webkit-filter: grayscale(100%);
+                              -webkit-transition: all 1s ease;
+                              }
+                              
+                              .lorem h1:hover{
+                              filter: grayscale(0%);
+                              filter: gray;
+                              -webkit-filter: grayscale(0%);
+                              filter: none;
+                              transition: 1s ease;
+                              }
+
+
+
+
+                              .faq {
+                                filter: grayscale(100%);
+                                -webkit-filter: grayscale(100%);
+                                -webkit-transition: all 1s ease;
+                                }
+                                
+                                .faq:hover{
+                                filter: grayscale(0%);
+                                filter: gray;
+                                -webkit-filter: grayscale(0%);
+                                filter: none;
+                                transition: 1s ease;
+                                }
+        
+
+
+
+                              
+
+                
 
 
             
@@ -420,4 +569,64 @@ header{
 
 
 
-            
+
+
+
+
+@import "compass/css3";
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+
+
+
+.gallery {
+  width: 990px;
+  margin: 0 auto;
+  padding: 5px;
+  background: #fff;
+  box-shadow: 2px 2px 2px rgba(0,0,0,.1);
+}
+
+.gallery > div {
+  position: relative;
+  float: left;
+  padding: 5px;
+}
+
+.gallery > div > img {
+  border: 1px solid black;
+  
+  height: 200px;
+  width: 500px;
+  display: flex;
+  transition: .1s transform;
+  transform: translateZ(0); /* hack */
+
+}
+
+.gallery > div:hover {
+  z-index: 1;
+}
+
+.gallery > div:hover > img {
+  transform: scale(1.8,1.8);
+  transition: .3s transform;
+}
+
+.cf:before, .cf:after {
+  display: table;
+  content: "";
+  line-height: 0;
+}
+
+.cf:after {
+  clear: both;
+}
+
+
+
+
+
+
+
