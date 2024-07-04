@@ -16,7 +16,10 @@ header{
 }
 
 .headimg{
-    width: 14%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30%;
 }
 
 .headimg img{
@@ -269,6 +272,15 @@ header{
                       filter: grayscale(100%);
                       -webkit-filter: grayscale(100%);
                       -webkit-transition: all 1s ease;
+                        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+                        background-image: linear-gradient(92.88deg, #2e43ea 9.16%, #4e6eea 43.89%, #2e43ea 64.72%);
+                        color: rgb(255, 255, 255);
+                        font-size: 1.5rem;
+                        padding: 20px;
+                        text-align: center;
+                        display: grid;
+                        place-items: center;
+                        font-weight: 700;
                       }
                       
                       .menu:hover{
@@ -285,6 +297,14 @@ header{
                         filter: grayscale(100%);
                         -webkit-filter: grayscale(100%);
                         -webkit-transition: all 1s ease;
+                        color: rgb(252, 252, 252);
+                        background-image: linear-gradient(92.88deg, #2e43ea 9.16%, #4e6eea 43.89%, #2e43ea 64.72%);
+                        background-color: #6543f1;
+                        font-size: 1.5rem;
+                        padding: 15px;
+                        text-align: center;
+                        display: grid;
+                        place-items: center;
                         }
                         
                         .button-36:hover{
@@ -362,6 +382,25 @@ header{
                                 filter: none;
                                 transition: 1s ease;
                                 }
+                                @media (max-width: 768px) {
+                                    .mainheadding h1 {
+                                        font-size: 2rem;
+                                    }
+
+                                    .menu {
+                                        font-size: 1rem;
+                                        margin-bottom: 1rem;
+                                    }
+
+                                    .button-36 {
+                                        font-size: 1rem;
+                                    }
+
+                                    .grow img {
+                                        width: 100%;
+                                        height: auto;
+                                    }
+                                }
         
 
 
@@ -390,7 +429,7 @@ header{
 
               .slider2 {
                 /* box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);  */
-                height: 100px;
+                height: 150px;
                 margin: auto;
                 overflow: hidden;
                 position: relative;
@@ -494,6 +533,7 @@ header{
   font-weight: 400;
   color: #341C94;
   width:95%;
+  padding-top:20px;
   padding-left:20px;
   margin-bottom:30px;
 }
@@ -581,48 +621,35 @@ header{
 
 
 .gallery {
-  width: 990px;
   margin: 0 auto;
   padding: 5px;
   background: #fff;
   box-shadow: 2px 2px 2px rgba(0,0,0,.1);
 }
 
-.gallery > div {
+.image-container {
   position: relative;
-  float: left;
   padding: 5px;
 }
 
-.gallery > div > img {
+.image-container > img {
   border: 1px solid black;
-  
   height: 200px;
-  width: 500px;
-  display: flex;
+  width: 100%;
+  display: block;
   transition: .1s transform;
   transform: translateZ(0); /* hack */
-
 }
 
-.gallery > div:hover {
+.image-container:hover {
   z-index: 1;
 }
 
-.gallery > div:hover > img {
-  transform: scale(1.8,1.8);
+.image-container:hover > img {
+  transform: scale(1.8, 1.8);
   transition: .3s transform;
 }
 
-.cf:before, .cf:after {
-  display: table;
-  content: "";
-  line-height: 0;
-}
-
-.cf:after {
-  clear: both;
-}
 
 
 
